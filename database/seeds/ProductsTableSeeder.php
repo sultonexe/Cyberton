@@ -11,8 +11,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        $products = array(
-
+     
             $products = array(
   array('id' => '1','product' => 'Sades Scythe RGB Gaming Mouser','price' => '260000.00','stock' => '10','description' => '<p>Mouse gaming murah enak buat maen pabji<br></p>','created_at' => '2020-01-14 14:50:48','updated_at' => NULL),
   array('id' => '2','product' => 'mouse gaming fantech X6 KNIGHT running RGB macro','price' => '185000.00','stock' => '10','description' => '<p>Mouse Gaming murah kurang dari 200.000<br></p>','created_at' => '2020-01-18 09:37:39','updated_at' => '2020-01-18 09:37:39'),
