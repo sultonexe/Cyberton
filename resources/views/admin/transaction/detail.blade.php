@@ -30,8 +30,8 @@
                             <tr>
                                 <td>{{ $loop->index + 1 }}</td>
                                 <td>{{ ucfirst($dtl->product) }}</td>
-                                <td>{{ "Rp. ". number_format($dtl->price,0,'.','.') }}</td>
                                 <td>{{ $dtl->qty }}</td>
+                                <td>{{ "Rp. ". number_format($dtl->price,0,'.','.') }}</td>
                                 <td>{{ "Rp. ". number_format($dtl->total,0,'.','.') }}</td>
                             </tr>
                         @endforeach

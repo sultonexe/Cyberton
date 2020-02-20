@@ -39,7 +39,7 @@ Route::group(['middleware' =>  ['auth']], function () {
     Route::resource('product', 'Web\ProductsController');
 
     Route::resource('transaction', 'Web\TransactionWebController', [
-        'only' => ['index' , 'show' , 'edit' , 'update'],
+        'only' => ['index' , 'show' , 'edit' , 'update' , 'create'],
     ]);
 });
 

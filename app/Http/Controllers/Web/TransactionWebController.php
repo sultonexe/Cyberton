@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Web;
 
 use App\Models\Transaction;
 use App\Models\DetailsTransaction;
+use App\Models\Product;
+use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
@@ -41,6 +43,17 @@ class TransactionWebController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function create()
+    {
+        $products = Product::all();
+        $transaction = Transaction::latest()->first();
+        $user = User::all();
+
+        return view('admin.transaction.create', compact('products', 'transaction', 'user'));
+        // dd('kesini');
+    }
+
     public function edit($id)
     {
         //
@@ -57,6 +70,15 @@ class TransactionWebController extends Controller
     {
         //
     }
+
+    // public function destroy($id)
+    // {
+    //     $product = Product::find($id);
+
+    //     $product->delete();
+
+    //     return view('transaction.create', compact('product'));
+    // }
 
 
 }

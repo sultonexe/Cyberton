@@ -8,6 +8,13 @@
 <!-- Default box -->
     <div class="box box-primary">
         <div class="box-body">
+
+            <div>
+                <a href=" {{ route('transaction.create') }} " class="btn btn-sm btn-primary">
+                    <i class="fa fa-plus"></i> Tambah Data
+                </a>
+            </div>
+
            <div class="table">
                <table class="table table-striped table-hover table-responsive" id="table">
                     <thead>
